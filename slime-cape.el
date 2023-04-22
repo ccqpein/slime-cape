@@ -1,4 +1,5 @@
 ;;; slime-cape.el --- slime completion backend for cape mode -*-lexical-binding:t-*-
+
 ;; This mode technically just connect slime-company to Cape mode
 ;;
 ;; See Also:
@@ -13,7 +14,7 @@
 (defvar cape-slime-backend (cape-company-to-capf #'company-slime))
 
 (define-slime-contrib slime-cape
-  (:authors "ccQ")
+  (:authors "ccQpein")
   (:swank-dependencies swank-arglists)
   (:on-load
    (dolist (h '(slime-mode-hook slime-repl-mode-hook sldb-mode-hook))
@@ -30,3 +31,4 @@
     (add-to-list 'completion-at-point-functions cape-slime-backend)))
 
 (provide 'slime-cape)
+;;; slime-cape.el ends here
