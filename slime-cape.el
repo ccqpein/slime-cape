@@ -7,6 +7,12 @@
 ;; [slime-company](https://github.com/anwyn/slime-company)
 ;; [cape](https://github.com/minad/cape)
 
+;; Author: ccQpein
+;; URL: https://github.com/ccqpein/slime-cape
+;; Version: 0.1.0
+;; Keywords: cape, corfu, slime, lisp
+;; Package-Requires: ((slime-company "1.6"))
+
 (require 'slime)
 (require 'slime-company)
 (require 'cape)
